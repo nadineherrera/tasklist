@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>All Tasks — Faint Shadows</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#ffffff;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+h1{margin:22px 0 10px 0;text-align:center;color:#222;
+  font-weight:800;letter-spacing:.2px}
+.container{max-width:1150px;margin:0 auto;padding:0 18px 38px}
+
+.grid{display:grid;gap:18px}
+@media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+
+.tile{
+  border-radius:18px;
+  padding:16px;
+  color:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,.04); /* very light shadow */
+}
+.tile h2{
+  margin:6px 6px 14px 6px;
+  font-size:20px;
+  font-weight:800;
+  color:#fff;
+}
+.pills{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+.pill{
+  padding:14px 16px;
+  border-radius:12px;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:.2px;
+  box-shadow:0 1px 3px rgba(0,0,0,.05),
+             inset 0 1px 0 rgba(255,255,255,.1); /* faint pill shadow */
+  border:1px solid rgba(255,255,255,.12);
+}
+</style>
+</head>
+<body>
+<h1>All Tasks</h1>
+<div class='container'>
+<div class='grid'>
+
+<!-- Example section -->
+<div class='tile' style='background:#4CAF50'>
+  <h2>Self-Care & Wellness</h2>
+  <div class='pills'>
+    <div class='pill' style='background:#449D48'>Meditate</div>
+    <div class='pill' style='background:#449D48'>Yoga</div>
+    <div class='pill' style='background:#449D48'>Walk for 30 Minutes</div>
+    <div class='pill' style='background:#449D48'>Strength Train</div>
+    <div class='pill' style='background:#449D48'>Stretch</div>
+    <div class='pill' style='background:#449D48'>Hydrate</div>
+    <div class='pill' style='background:#449D48'>Take a Shower</div>
+    <div class='pill' style='background:#449D48'>Brush Teeth</div>
+    <div class='pill' style='background:#449D48'>Take Medicine</div>
+    <div class='pill' style='background:#449D48'>Read</div>
+    <div class='pill' style='background:#449D48'>Journal</div>
+    <div class='pill' style='background:#449D48'>Dream Journal</div>
+    <div class='pill' style='background:#449D48'>Trim/Dye Hair</div>
+    <div class='pill' style='background:#449D48'>Pedicure/Nails</div>
+    <div class='pill' style='background:#449D48'>Eyebrow Threading</div>
+    <div class='pill' style='background:#449D48'>Schedule Personal Downtime</div>
+  </div>
