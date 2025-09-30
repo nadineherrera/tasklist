@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>All Tasks — Faint Shadows</title>
+<title>All Tasks — Faint Shadows (Full)</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#ffffff;
@@ -27,172 +27,215 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
   font-weight:800;
   color:#fff;
 }
-.pills{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:10px;
-}
+.pills{display:grid;grid-template-columns:1fr;gap:10px}
 .pill{
-  padding:14px 16px;
-  border-radius:12px;
-  color:#fff;
-  font-weight:700;
-  letter-spacing:.2px;
-  box-shadow:0 1px 3px rgba(0,0,0,.05),
-             inset 0 1px 0 rgba(255,255,255,.1); /* faint pill shadow */
+  padding:14px 16px;border-radius:12px;color:#fff;font-weight:700;letter-spacing:.2px;
+  box-shadow:0 1px 3px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.1);
   border:1px solid rgba(255,255,255,.12);
 }
 </style>
 </head>
 <body>
 <h1>All Tasks</h1>
-<div class='container'>
-<div class='grid'>
+<div class="container">
+  <div class="grid">
 
-<!-- Self-Care & Wellness -->
-<div class='tile' style='background:#4CAF50'>
-  <h2>Self-Care & Wellness</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#449D48'>Meditate</div>
-    <div class='pill' style='background:#449D48'>Yoga</div>
-    <div class='pill' style='background:#449D48'>Walk for 30 Minutes</div>
-    <div class='pill' style='background:#449D48'>Strength Train</div>
-    <div class='pill' style='background:#449D48'>Stretch</div>
-    <div class='pill' style='background:#449D48'>Hydrate</div>
-    <div class='pill' style='background:#449D48'>Take a Shower</div>
-    <div class='pill' style='background:#449D48'>Brush Teeth</div>
-    <div class='pill' style='background:#449D48'>Take Medicine</div>
-    <div class='pill' style='background:#449D48'>Read</div>
-    <div class='pill' style='background:#449D48'>Journal</div>
-    <div class='pill' style='background:#449D48'>Dream Journal</div>
-    <div class='pill' style='background:#449D48'>Trim/Dye Hair</div>
-    <div class='pill' style='background:#449D48'>Pedicure/Nails</div>
-    <div class='pill' style='background:#449D48'>Eyebrow Threading</div>
-    <div class='pill' style='background:#449D48'>Schedule Personal Downtime</div>
+    <!-- Self-Care & Wellness -->
+    <div class="tile" style="background:#4CAF50">
+      <h2>Self-Care & Wellness</h2>
+      <div class="pills">
+        <div class="pill" style="background:#449D48">Meditate</div>
+        <div class="pill" style="background:#449D48">Yoga</div>
+        <div class="pill" style="background:#449D48">Walk for 30 Minutes</div>
+        <div class="pill" style="background:#449D48">Strength Train</div>
+        <div class="pill" style="background:#449D48">Stretch</div>
+        <div class="pill" style="background:#449D48">Hydrate</div>
+        <div class="pill" style="background:#449D48">Take a Shower</div>
+        <div class="pill" style="background:#449D48">Brush Teeth</div>
+        <div class="pill" style="background:#449D48">Take Medicine</div>
+        <div class="pill" style="background:#449D48">Read</div>
+        <div class="pill" style="background:#449D48">Journal</div>
+        <div class="pill" style="background:#449D48">Dream Journal</div>
+        <div class="pill" style="background:#449D48">Trim/Dye Hair</div>
+        <div class="pill" style="background:#449D48">Pedicure/Nails</div>
+        <div class="pill" style="background:#449D48">Eyebrow Threading</div>
+        <div class="pill" style="background:#449D48">Schedule Personal Downtime</div>
+      </div>
+    </div>
+
+    <!-- Meals & Routine -->
+    <div class="tile" style="background:#FFD700">
+      <h2>Meals & Routine</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E6C200">Prep &amp; Eat Breakfast</div>
+        <div class="pill" style="background:#E6C200">Prep &amp; Eat Lunch</div>
+        <div class="pill" style="background:#E6C200">Prep &amp; Eat Dinner</div>
+        <div class="pill" style="background:#E6C200">Prepare Meraki's Lunch</div>
+        <div class="pill" style="background:#E6C200">Meal Plan</div>
+        <div class="pill" style="background:#E6C200">Order Groceries</div>
+      </div>
+    </div>
+
+    <!-- Family & Pets -->
+    <div class="tile" style="background:#FF4F4F">
+      <h2>Family & Pets</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E64545">Spend Time With Family</div>
+        <div class="pill" style="background:#E64545">Get Meraki Ready for School</div>
+        <div class="pill" style="background:#E64545">Make Sure Meraki Takes a Bath</div>
+        <div class="pill" style="background:#E64545">Make Sure Meraki Brushes His Teeth</div>
+        <div class="pill" style="background:#E64545">Make Sure Meraki Gets on the Bus</div>
+        <div class="pill" style="background:#E64545">Make Sure Meraki Gets Off the Bus</div>
+        <div class="pill" style="background:#E64545">Feed the Cat</div>
+        <div class="pill" style="background:#E64545">Clean the Cat's Litter Box</div>
+        <div class="pill" style="background:#E64545">Family Fun/Outings: Movies, Game Night, Outdoor Activities</div>
+        <div class="pill" style="background:#E64545">Date Night/Relationship Care (Include Glenn)</div>
+      </div>
+    </div>
+
+    <!-- Household -->
+    <div class="tile" style="background:#FF8C00">
+      <h2>Household</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E67E00">Sweep and Mop Floors</div>
+        <div class="pill" style="background:#E67E00">Wipe Down Walls</div>
+        <div class="pill" style="background:#E67E00">Dust</div>
+        <div class="pill" style="background:#E67E00">Clean Bathrooms</div>
+        <div class="pill" style="background:#E67E00">Clean Bedrooms</div>
+        <div class="pill" style="background:#E67E00">Laundry</div>
+        <div class="pill" style="background:#E67E00">Take Out / Retrieve Trash Cans</div>
+        <div class="pill" style="background:#E67E00">Use Video to Put Ryobi Saw Together</div>
+        <div class="pill" style="background:#E67E00">Clean Basement</div>
+        <div class="pill" style="background:#E67E00">Clean Garage</div>
+        <div class="pill" style="background:#E67E00">Clean Back Yard</div>
+        <div class="pill" style="background:#E67E00">Clean Front Yard</div>
+        <div class="pill" style="background:#E67E00">Mow Back Yard</div>
+        <div class="pill" style="background:#E67E00">Mow Front Yard</div>
+        <div class="pill" style="background:#E67E00">Cut Down Bushes in Back Yard</div>
+        <div class="pill" style="background:#E67E00">Get Vines Off Sides of House</div>
+        <div class="pill" style="background:#E67E00">Change HVAC Filters</div>
+        <div class="pill" style="background:#E67E00">Check Smoke/CO Detectors</div>
+        <div class="pill" style="background:#E67E00">Change Batteries</div>
+      </div>
+    </div>
+
+    <!-- Business (Alchemy Body Werks) -->
+    <div class="tile" style="background:#FF4FA1">
+      <h2>Business (Alchemy Body Werks)</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E64590">Package Soaps</div>
+        <div class="pill" style="background:#E64590">Inventory Products &amp; Order Supplies</div>
+        <div class="pill" style="background:#E64590">Marketing (Content / Photos / Website)</div>
+        <div class="pill" style="background:#E64590">Email Lady About Body Butter &amp; Ship</div>
+        <div class="pill" style="background:#E64590">Make Pure Soap</div>
+        <div class="pill" style="background:#E64590">Make Beard Boom</div>
+        <div class="pill" style="background:#E64590">Make Incense Sticks</div>
+        <div class="pill" style="background:#E64590">Make Body Oils</div>
+        <div class="pill" style="background:#E64590">Make Harmony Soap</div>
+        <div class="pill" style="background:#E64590">Make Mocha Soap</div>
+        <div class="pill" style="background:#E64590">Make Onyx</div>
+        <div class="pill" style="background:#E64590">Make Gold</div>
+        <div class="pill" style="background:#E64590">Make Massage Candles</div>
+        <div class="pill" style="background:#E64590">Make Lip Balm</div>
+        <div class="pill" style="background:#E64590">Design New Product Labels</div>
+        <div class="pill" style="background:#E64590">Design Signage for Booth</div>
+        <div class="pill" style="background:#E64590">Create Bundle Deals</div>
+        <div class="pill" style="background:#E64590">Find and Apply for Events</div>
+        <div class="pill" style="background:#E64590">Take Photos of New Products &amp; Add to Website</div>
+        <div class="pill" style="background:#E64590">Take Lifestyle Photos for Faire Application</div>
+        <div class="pill" style="background:#E64590">Find Potential Wholesale Customers</div>
+        <div class="pill" style="background:#E64590">Produce Sound Healing Audio Files</div>
+        <div class="pill" style="background:#E64590">File Business Taxes (Yearly)</div>
+        <div class="pill" style="background:#E64590">File Sales &amp; Use Tax (Quarterly)</div>
+      </div>
+    </div>
+
+    <!-- Work & Professional -->
+    <div class="tile" style="background:#9B4DFF">
+      <h2>Work & Professional</h2>
+      <div class="pills">
+        <div class="pill" style="background:#8B43E6">Work 9 AM–8 PM</div>
+        <div class="pill" style="background:#8B43E6">Update Resume (PAR) for Apple &amp; Update GitHub Page</div>
+        <div class="pill" style="background:#8B43E6">Resolve OpenWeather API Issue (Email)</div>
+        <div class="pill" style="background:#8B43E6">Check Email</div>
+        <div class="pill" style="background:#8B43E6">Marketing</div>
+        <div class="pill" style="background:#8B43E6">Inventory Products &amp; Order Supplies</div>
+        <div class="pill" style="background:#8B43E6">Budget</div>
+        <div class="pill" style="background:#8B43E6">Pay Bills</div>
+      </div>
+    </div>
+
+    <!-- Medical & Health -->
+    <div class="tile" style="background:#9ACD32">
+      <h2>Medical & Health</h2>
+      <div class="pills">
+        <div class="pill" style="background:#87B82D">Therapy (Virtual)</div>
+        <div class="pill" style="background:#87B82D">Doctor Follow-up (Dr. Yu)</div>
+        <div class="pill" style="background:#87B82D">Yearly Physical – Meraki</div>
+        <div class="pill" style="background:#87B82D">Yearly Physical – Me</div>
+        <div class="pill" style="background:#87B82D">Yearly Physical – Glenn</div>
+        <div class="pill" style="background:#87B82D">Yearly Eye Exam – Meraki</div>
+        <div class="pill" style="background:#87B82D">Yearly Eye Exam – Me</div>
+        <div class="pill" style="background:#87B82D">Yearly Eye Exam – Glenn</div>
+        <div class="pill" style="background:#87B82D">Yearly Dental Cleaning – Meraki</div>
+        <div class="pill" style="background:#87B82D">Yearly Dental Cleaning – Me</div>
+        <div class="pill" style="background:#87B82D">Yearly Dental Cleaning – Glenn</div>
+        <div class="pill" style="background:#87B82D">Annual Exam – Cat</div>
+        <div class="pill" style="background:#87B82D">Spay Cat</div>
+      </div>
+    </div>
+
+    <!-- School & Learning -->
+    <div class="tile" style="background:#4A90E2">
+      <h2>School & Learning</h2>
+      <div class="pills">
+        <div class="pill" style="background:#407EC7">Submit papers + discussion post and responses</div>
+        <div class="pill" style="background:#407EC7">Reading</div>
+        <div class="pill" style="background:#407EC7">Learn Spanish</div>
+        <div class="pill" style="background:#407EC7">Review Backpack</div>
+        <div class="pill" style="background:#407EC7">Sign Permission Slips</div>
+        <div class="pill" style="background:#407EC7">Check School Emails</div>
+        <div class="pill" style="background:#407EC7">Make Sure Meraki Does His Homework Packet</div>
+        <div class="pill" style="background:#407EC7">Get CompTIA Security+</div>
+        <div class="pill" style="background:#407EC7">Get CompTIA Network+</div>
+      </div>
+    </div>
+
+    <!-- Professional & Records -->
+    <div class="tile" style="background:#FFC300">
+      <h2>Professional & Records</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E6AF00">File Important Documents (Taxes, Insurance, Medical, School)</div>
+        <div class="pill" style="background:#E6AF00">Back-up Digital Files (Photos, Schoolwork, Important Business Docs)</div>
+        <div class="pill" style="background:#E6AF00">Savings Goals</div>
+        <div class="pill" style="background:#E6AF00">College Fund</div>
+        <div class="pill" style="background:#E6AF00">Retirement Check-ins</div>
+        <div class="pill" style="background:#E6AF00">Bill Review: Utilities, Subscriptions, Insurance Renewals</div>
+        <div class="pill" style="background:#E6AF00">Organize &amp; Update Rocket Money</div>
+      </div>
+    </div>
+
+    <!-- Digital -->
+    <div class="tile" style="background:#00C2CB">
+      <h2>Digital</h2>
+      <div class="pills">
+        <div class="pill" style="background:#00AEB6">Check Email</div>
+        <div class="pill" style="background:#00AEB6">Check Social Media</div>
+        <div class="pill" style="background:#00AEB6">Update Tasks</div>
+      </div>
+    </div>
+
+    <!-- Car Maintenance -->
+    <div class="tile" style="background:#FF6B6B">
+      <h2>Car Maintenance</h2>
+      <div class="pills">
+        <div class="pill" style="background:#E65F5F">Oil Change</div>
+        <div class="pill" style="background:#E65F5F">Tire Rotation</div>
+        <div class="pill" style="background:#E65F5F">Safety Inspection</div>
+      </div>
+    </div>
+
   </div>
-</div>
-
-<!-- Meals & Routine -->
-<div class='tile' style='background:#FFD700'>
-  <h2>Meals & Routine</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#E6C200'>Prep/Eat Breakfast</div>
-    <div class='pill' style='background:#E6C200'>Prep/Eat Lunch</div>
-    <div class='pill' style='background:#E6C200'>Prep/Eat Dinner</div>
-    <div class='pill' style='background:#E6C200'>Meal Plan & Order Groceries</div>
-  </div>
-</div>
-
-<!-- Family & Pets -->
-<div class='tile' style='background:#FF4F4F'>
-  <h2>Family & Pets</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#E64545'>Review Backpack</div>
-    <div class='pill' style='background:#E64545'>Sign Permission Slips</div>
-    <div class='pill' style='background:#E64545'>Check School Emails</div>
-    <div class='pill' style='background:#E64545'>Prepare Meraki’s Lunch</div>
-    <div class='pill' style='background:#E64545'>Feed Pets</div>
-    <div class='pill' style='background:#E64545'>Walk Dog</div>
-    <div class='pill' style='background:#E64545'>Family Fun/Outings</div>
-    <div class='pill' style='background:#E64545'>Date Night/Relationship Care</div>
-  </div>
-</div>
-
-<!-- Household -->
-<div class='tile' style='background:#FF8C00'>
-  <h2>Household</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#E67E00'>Sweep & Mop Floors</div>
-    <div class='pill' style='background:#E67E00'>Clean Bathrooms</div>
-    <div class='pill' style='background:#E67E00'>Clean Bedrooms</div>
-    <div class='pill' style='background:#E67E00'>Dust</div>
-    <div class='pill' style='background:#E67E00'>Wipe Down Walls</div>
-    <div class='pill' style='background:#E67E00'>Laundry</div>
-    <div class='pill' style='background:#E67E00'>Mow Front Yard</div>
-    <div class='pill' style='background:#E67E00'>Use Video to Put Ryobi Saw Together</div>
-    <div class='pill' style='background:#E67E00'>Seasonal Chores</div>
-  </div>
-</div>
-
-<!-- Business & Creative -->
-<div class='tile' style='background:#FF4FA1'>
-  <h2>Business & Creative</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#E64590'>Make Onyx</div>
-    <div class='pill' style='background:#E64590'>Make Gold</div>
-    <div class='pill' style='background:#E64590'>Make Massage Candles</div>
-    <div class='pill' style='background:#E64590'>Make Lip Balm</div>
-    <div class='pill' style='background:#E64590'>Design New Product Labels</div>
-    <div class='pill' style='background:#E64590'>Design Signage for Booth</div>
-    <div class='pill' style='background:#E64590'>Create Bundle Deals</div>
-    <div class='pill' style='background:#E64590'>Produce Sound Healing Audio Files</div>
-    <div class='pill' style='background:#E64590'>Take Photos of New Products</div>
-    <div class='pill' style='background:#E64590'>Take Lifestyle Photos for Faire</div>
-    <div class='pill' style='background:#E64590'>Find & Apply for Events</div>
-    <div class='pill' style='background:#E64590'>Find Potential Wholesale Customers</div>
-    <div class='pill' style='background:#E64590'>File Business Taxes Yearly</div>
-    <div class='pill' style='background:#E64590'>File Sales & Use Tax Quarterly</div>
-  </div>
-</div>
-
-<!-- Work & Professional -->
-<div class='tile' style='background:#9B4DFF'>
-  <h2>Work & Professional</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#873BE6'>Check Email</div>
-    <div class='pill' style='background:#873BE6'>Marketing</div>
-  </div>
-</div>
-
-<!-- Medical & Health -->
-<div class='tile' style='background:#9ACD32'>
-  <h2>Medical & Health</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#87B82D'>Therapy Appointments</div>
-    <div class='pill' style='background:#87B82D'>Dr. Yu Follow-Up</div>
-    <div class='pill' style='background:#87B82D'>Get Yearly Physical — Meraki</div>
-    <div class='pill' style='background:#87B82D'>Get Yearly Physical — Me</div>
-    <div class='pill' style='background:#87B82D'>Get Yearly Physical — Glenn</div>
-    <div class='pill' style='background:#87B82D'>Yearly Eye Exam — All</div>
-    <div class='pill' style='background:#87B82D'>Yearly Dental Cleaning — All</div>
-    <div class='pill' style='background:#87B82D'>Annual Exam for Cat</div>
-    <div class='pill' style='background:#87B82D'>Spay the Cat</div>
-  </div>
-</div>
-
-<!-- School & Learning -->
-<div class='tile' style='background:#4A90E2'>
-  <h2>School & Learning</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#357ABD'>Submit Papers + Discussion Posts & Responses</div>
-    <div class='pill' style='background:#357ABD'>CompTIA Security+</div>
-    <div class='pill' style='background:#357ABD'>CompTIA Network+</div>
-    <div class='pill' style='background:#357ABD'>Learn Spanish</div>
-    <div class='pill' style='background:#357ABD'>Read 15 Minutes Daily</div>
-  </div>
-</div>
-
-<!-- Professional & Records -->
-<div class='tile' style='background:#FFC300'>
-  <h2>Professional & Records</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#E6AF00'>File Important Documents</div>
-    <div class='pill' style='background:#E6AF00'>Back-Up Digital Files</div>
-    <div class='pill' style='background:#E6AF00'>Bill Review: Utilities, Subscriptions, Insurance</div>
-    <div class='pill' style='background:#E6AF00'>Financial Planning: Savings, College Fund, Retirement</div>
-  </div>
-</div>
-
-<!-- Digital -->
-<div class='tile' style='background:#00C2CB'>
-  <h2>Digital</h2>
-  <div class='pills'>
-    <div class='pill' style='background:#00A5AD'>Check Inventory Products</div>
-    <div class='pill' style='background:#00A5AD'>Order Supplies</div>
-  </div>
-</div>
-
-</div>
 </div>
 </body>
 </html>
