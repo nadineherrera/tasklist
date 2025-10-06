@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-<meta charset='utf-8'/>
-<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>All Tasks — Faint Shadows (Full)</title>
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:#ffffff;
-  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-h1{margin:22px 0 10px 0;text-align:center;color:#222;
-  font-weight:800;letter-spacing:.2px}
-.container{max-width:1150px;margin:0 auto;padding:0 18px 38px}
+  *{box-sizing:border-box}
+  html,body{
+    margin:0;padding:0;
+    background:#ffffff;             /* white page background */
+    color:#111111;                  /* dark default text */
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif
+  }
+  h1{
+    margin:22px 0 10px;text-align:center;color:#222;
+    font-weight:800;letter-spacing:.2px
+  }
+  .container{max-width:1150px;margin:0 auto;padding:0 18px 38px}
 
-.grid{display:grid;gap:18px}
-@media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  .grid{display:grid;gap:18px}
+  @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
 
-.tile{
-  border-radius:18px;
-  padding:16px;
-  color:#fff;
-  box-shadow:0 2px 6px rgba(0,0,0,.04); /* very light shadow */
-}
-.tile h2{
-  margin:6px 6px 14px 6px;
-  font-size:20px;
-  font-weight:800;
-  color:#fff;
-}
-.pills{display:grid;grid-template-columns:1fr;gap:10px}
-.pill{
-  padding:14px 16px;border-radius:12px;color:#fff;font-weight:700;letter-spacing:.2px;
-  box-shadow:0 1px 3px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.1);
-  border:1px solid rgba(255,255,255,.12);
-}
+  .tile{
+    border-radius:18px;
+    padding:16px;
+    color:#111;                     /* <- make text dark inside tiles */
+    box-shadow:0 2px 6px rgba(0,0,0,.04);
+    background:#f8f8f8;             /* subtle light panel so colors pop on white page */
+  }
+  /* headings inside tiles */
+  .tile h2{
+    margin:6px 6px 14px;
+    font-size:20px;
+    font-weight:800;
+    color:#111;                     /* dark heading for readability */
+  }
+  .pills{display:grid;grid-template-columns:1fr;gap:10px}
+  .pill{
+    padding:14px 16px;border-radius:12px;
+    color:#fff;                     /* keep pill labels white for contrast on colored pills */
+    font-weight:700;letter-spacing:.2px;
+    box-shadow:0 1px 3px rgba(0,0,0,.05), inset 0 1px 0 rgba(255,255,255,.1);
+    border:1px solid rgba(0,0,0,.06);
+  }
 </style>
 </head>
 <body>
@@ -41,8 +51,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
   <div class="grid">
 
     <!-- Self-Care & Wellness -->
-    <div class="tile" style="background:#4CAF50">
-      <h2>Self-Care & Wellness</h2>
+    <div class="tile" style="background:#EAF7EB">
+      <h2 style="color:#1f5f22">Self-Care & Wellness</h2>
       <div class="pills">
         <div class="pill" style="background:#449D48">Meditate</div>
         <div class="pill" style="background:#449D48">Yoga</div>
@@ -64,8 +74,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Meals & Routine -->
-    <div class="tile" style="background:#FFD700">
-      <h2>Meals & Routine</h2>
+    <div class="tile" style="background:#FFF8D6">
+      <h2 style="color:#7a6400">Meals & Routine</h2>
       <div class="pills">
         <div class="pill" style="background:#E6C200">Prep &amp; Eat Breakfast</div>
         <div class="pill" style="background:#E6C200">Prep &amp; Eat Lunch</div>
@@ -77,8 +87,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Family & Pets -->
-    <div class="tile" style="background:#FF4F4F">
-      <h2>Family & Pets</h2>
+    <div class="tile" style="background:#FFE3E3">
+      <h2 style="color:#7f1f1f">Family & Pets</h2>
       <div class="pills">
         <div class="pill" style="background:#E64545">Spend Time With Family</div>
         <div class="pill" style="background:#E64545">Get Meraki Ready for School</div>
@@ -94,8 +104,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Household -->
-    <div class="tile" style="background:#FF8C00">
-      <h2>Household</h2>
+    <div class="tile" style="background:#FFE9D9">
+      <h2 style="color:#7a3d00">Household</h2>
       <div class="pills">
         <div class="pill" style="background:#E67E00">Sweep and Mop Floors</div>
         <div class="pill" style="background:#E67E00">Wipe Down Walls</div>
@@ -120,8 +130,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Business (Alchemy Body Werks) -->
-    <div class="tile" style="background:#FF4FA1">
-      <h2>Business (Alchemy Body Werks)</h2>
+    <div class="tile" style="background:#FFE3F0">
+      <h2 style="color:#7a1e4a">Business (Alchemy Body Werks)</h2>
       <div class="pills">
         <div class="pill" style="background:#E64590">Package Soaps</div>
         <div class="pill" style="background:#E64590">Inventory Products &amp; Order Supplies</div>
@@ -151,8 +161,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Work & Professional -->
-    <div class="tile" style="background:#9B4DFF">
-      <h2>Work & Professional</h2>
+    <div class="tile" style="background:#F1E8FF">
+      <h2 style="color:#4a2d9c">Work & Professional</h2>
       <div class="pills">
         <div class="pill" style="background:#8B43E6">Work 9 AM–8 PM</div>
         <div class="pill" style="background:#8B43E6">Update Resume (PAR) for Apple &amp; Update GitHub Page</div>
@@ -166,8 +176,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Medical & Health -->
-    <div class="tile" style="background:#9ACD32">
-      <h2>Medical & Health</h2>
+    <div class="tile" style="background:#F1F8E6">
+      <h2 style="color:#4b6517">Medical & Health</h2>
       <div class="pills">
         <div class="pill" style="background:#87B82D">Therapy (Virtual)</div>
         <div class="pill" style="background:#87B82D">Doctor Follow-up (Dr. Yu)</div>
@@ -186,8 +196,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- School & Learning -->
-    <div class="tile" style="background:#4A90E2">
-      <h2>School & Learning</h2>
+    <div class="tile" style="background:#E9F2FF">
+      <h2 style="color:#1e4f93">School & Learning</h2>
       <div class="pills">
         <div class="pill" style="background:#407EC7">Submit papers + discussion post and responses</div>
         <div class="pill" style="background:#407EC7">Reading</div>
@@ -202,8 +212,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Professional & Records -->
-    <div class="tile" style="background:#FFC300">
-      <h2>Professional & Records</h2>
+    <div class="tile" style="background:#FFF4D8">
+      <h2 style="color:#7a6400">Professional & Records</h2>
       <div class="pills">
         <div class="pill" style="background:#E6AF00">File Important Documents (Taxes, Insurance, Medical, School)</div>
         <div class="pill" style="background:#E6AF00">Back-up Digital Files (Photos, Schoolwork, Important Business Docs)</div>
@@ -216,8 +226,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Digital -->
-    <div class="tile" style="background:#00C2CB">
-      <h2>Digital</h2>
+    <div class="tile" style="background:#E5FAFB">
+      <h2 style="color:#0b5b60">Digital</h2>
       <div class="pills">
         <div class="pill" style="background:#00AEB6">Check Email</div>
         <div class="pill" style="background:#00AEB6">Check Social Media</div>
@@ -226,8 +236,8 @@ h1{margin:22px 0 10px 0;text-align:center;color:#222;
     </div>
 
     <!-- Car Maintenance -->
-    <div class="tile" style="background:#FF6B6B">
-      <h2>Car Maintenance</h2>
+    <div class="tile" style="background:#FFE5E5">
+      <h2 style="color:#7a1e1e">Car Maintenance</h2>
       <div class="pills">
         <div class="pill" style="background:#E65F5F">Oil Change</div>
         <div class="pill" style="background:#E65F5F">Tire Rotation</div>
