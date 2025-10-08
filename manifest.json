@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "All Tasks — Faint Shadows",
+  "short_name": "Tasks",
+  "description": "Quick, colorful daily task tiles for self-care, family, work, and more.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-192x192.png?v=1759915330",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-512x512.png?v=1759915330",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
