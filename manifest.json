@@ -11,13 +11,13 @@
   "theme_color": "#111111",
   "icons": [
     {
-      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-192x192.png?v=1759915330",
+      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-192x192_cbb47848-66e2-4d53-9190-2ce385b62d4b.png?v=1760275005",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-512x512.png?v=1759915330",
+      "src": "https://cdn.shopify.com/s/files/1/0674/0898/6349/files/android-chrome-512x512_486f27e9-ac4e-4c1e-8060-2435ba8f4b1a.png?v=1760275005",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
